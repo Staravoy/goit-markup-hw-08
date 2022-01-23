@@ -1,0 +1,36 @@
+.skills-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background: $button;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.s-item {
+  border-radius: 4px;
+  width: 70px;
+  height: 70px;
+}
+.skills-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $text-color;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.skills-text {
+  margin-top: 0px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $input;
+  margin-bottom: 30px;
+}
+.skills-uper {
+  margin-top: 60px;
+}

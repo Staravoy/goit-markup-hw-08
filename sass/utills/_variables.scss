@@ -1,0 +1,47 @@
+$text-color: #212121;
+$hover: #2196f3;
+$input: #757575;
+$background-color: #2f303a;
+$white: #ffff;
+$button: #f5f4fa;
+$icon-color: #afb1b8;
+$border-color: #eeee;
+$font-rale: "Raleway";
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+body {
+  font-family: "Raboto";
+  color: $text-color;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  margin-top: 20px;
+}
+.container {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 15px 0;
+}
+.none {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

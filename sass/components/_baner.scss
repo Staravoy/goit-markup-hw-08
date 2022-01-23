@@ -1,0 +1,106 @@
+.baner {
+  background-color: $background-color;
+  text-align: center;
+
+  max-width: 480px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/overlay.jpg");
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-repeat: none;
+}
+.baner-container {
+  justify-content: center;
+}
+.baner-title {
+  margin-bottom: 30px;
+  margin-top: 118px;
+  color: $white;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.baner-button {
+  width: 200px;
+  height: 50px;
+
+  font-family: "Raboto";
+  background-color: $hover;
+  color: $white;
+  border: 0;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 118px;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.2);
+  transition-duration: 250ms;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+  position: absolute;
+
+  width: 450px;
+  height: 609px;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  right: 15px;
+
+  transform: translate(-50%, -50%);
+  background: $white;
+}
+
+.modal-title {
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+}
+.close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background: $white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-position: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+
+  .close-img {
+    width: 11px;
+    height: 11px;
+  }
+  &:hover {
+    fill: $hover;
+  }
+}
