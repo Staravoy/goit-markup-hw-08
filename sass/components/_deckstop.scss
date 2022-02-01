@@ -1,0 +1,87 @@
+@media (min-width: 1200px) {
+  .hidden {
+    display: block;
+  }
+  .contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+  .contacts .item + .item {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+@media (min-width: 1200px) {
+  .skills-list {
+    flex-wrap: nowrap;
+  }
+  .skills-item {
+    margin-top: 60px;
+  }
+  .skills {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .what-we-do {
+    padding-bottom: 94px;
+  }
+}
+@media (min-width: 1200px) {
+  .we-list-item {
+    width: 270px;
+    height: 428px;
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
+  .we-img {
+    width: 270px;
+    height: 260px;
+  }
+  .we {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-blok {
+    display: flex;
+  }
+  .flex-adress .street {
+    text-align: left;
+  }
+  .flex-adress .footer-cont {
+    margin-right: 93px;
+    text-align: left;
+  }
+  .subscribe-form {
+    display: flex;
+    align-items: center;
+  }
+  .subscribe-form button {
+    margin-left: 12px;
+    margin-top: 0;
+  }
+  .street {
+    margin-right: 70px;
+  }
+  .footer-blok .subscribe {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .buttons-list {
+    margin-top: 94px;
+  }
+}
+@media (min-width: 1200px) {
+  .backdrop .modal {
+    width: 528px;
+    height: 581px;
+  }
+}

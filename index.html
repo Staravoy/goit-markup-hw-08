@@ -20,17 +20,33 @@
 
 <body>
 
-    <header class="header section">
+    <header class="header ">
         <div class="container">
-            <di v class="nav-box">
-
+            <div class="nav-box">
                 <a href="#" class="logo"><span class="header-logo-decor">Web</span>Studio</a>
+                <button class="menu-toggle js-open-menu" aria-expanded="false"aria-controls="mobile-menu">
+                    <svg class="menu-icon">
+                        <use href="images/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="menu-toggle js-close-menu">
+                        adadfafa
+                    </button>
+                
+                    <ul class="mobile-menu">
+                        <li><a href="" class="link">О нас</a></li>
+                        <li><a href="" class="link">Работы</a></li>
+                        <li><a href="" class="link">Контакты</a></li>
+                        <li><a href="" class="link">Карьера</a></li>
+                    </ul>
+                </div>
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-list-item"><a href="./index.html" class="nav-link nav-link-active">Студия</a></li>
                         <li class="nav-list-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
                         <li class="nav-list-item"><a href="#" class="nav-link">Контакты</a></li>
-                    </ul>
+                    </ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
                 </nav>
                 <ul class="contacts">
                     <li class="item">
@@ -106,7 +122,7 @@
                                 <div class="form-checkbox">
                                     <input type="checkbox" name="checkbox" id="checkbox">
                                     <span class="span-checkbox"><img class="span-img" src="images/Vector-1.png"/></span>
-                                    <label for="checkbox">
+                                    <label for="checkbox" class="checkbox-label">
                                         Соглашаюсь с рассылкой и принимаю
                                     </label>
                             
@@ -140,7 +156,7 @@
                         <p class="skills-text">Идейные соображения, а также начало повседневной работы по формированию
                             позиции.</p>
                     </li>
-                    <li class="skills-item ">
+                    <li class="skills-item skills-uper">
                         <div class="skills-img">
         
                             <svg class="s-item">
@@ -153,7 +169,7 @@
                             собой.
                         </p>
                     </li>
-                    <li class="skills-item">
+                    <li class="skills-item ">
                         <div class="skills-img">
                             <svg class="s-item">
                                 <use href="images/sprite.svg#icon-diagram-1"></use>
@@ -177,27 +193,38 @@
                 </ul>
             </div>
         </section>
-        <section class="section what-we-do none">
+        <section class="section what-we-do hidden">
             <div class="container">
                 <h2 class="what-we-do-title">Чем мы занимаемся</h2>
                  <ul class="what-we-do-list">
 
                     <li class="what-we-do-img">                       
-                            <img src="images/index/programing.jpg" alt="Людина програмує за комп'ютером" width="370" />
+                            <img srcset="
+                            ./images/programing@1x.png 1x,
+                            ./images/programing@2x.png 2x
+                            "src="./images/programing@1x.png " alt="Людина програмує за комп'ютером" width="370" />
                             <div class="what-we-do-poster">
                                 <h3 class="what-we-do-text">Десктопные приложения</h3>
                             </div>     
                     </li>
 
                     <li class="what-we-do-img">
-                        <img src="images//index/computer.jpg" alt="Програмування за ноутбуком" width="370" />
+                        <img srcset="
+                        ./images/computer@1x.png 1x,
+                        ./images/computer@2x.png 2x
+                        "
+                        src="./images/computer@1x.png" alt="Програмування за ноутбуком" width="370" />
                         <div class="what-we-do-poster">
                             <h3 class="what-we-do-text">Мобильные приложения</h3>
                         </div>
                     </li>
 
                     <li class="what-we-do-img">
-                        <img src="images//index/draw.jpg" alt="Планшет" width="370" />
+                        <img srcset="
+                        ./images/draw@1x.png 1x,
+                        ./images/draw@2x.png 2x
+                        "
+                        src="images/draw@1x.png" alt="Планшет" width="370" />
                         <div class="what-we-do-poster">
                             <h3 class="what-we-do-text">Дизайнерские решения</h3>
                         </div>
@@ -211,7 +238,21 @@
                 <h2 class="we-title">Наша команда</h2>
                 <ul class="we-list">
                     <li class="we-list-item">
-                        <img src="./images//index/demyanenko.jpg" alt="Игорь Демьяненко" width="450" class="we-img" />
+                        <picture>
+                            <source srcset="
+                            ./images/demyanenko-desktop@1x.jpg 1x,
+                            ./images/demyanenko-desktop@2x.jpg 2x
+                            " media="(min-width: 1200px)"/>
+                            <source srcset="
+                            ./images/demyanenko-tablet.jpg 1x,
+                            ./iamges/demyanenko-tablet@2x.png 2x
+                            " media="(min-width: 768px)" />
+                            <source srcset="
+                            ./images/demyanenko.jpg 1x,
+                            ./images/demyanenko@2x.jpg 2x
+                            " media="(min-width: 320px)"/>
+                        <img src="./images/demyanenko.jpg" alt="Игорь Демьяненко" width="450" class="we-img" />
+                        </picture>
                         <div class="we-block">
                             <h3 class="we-name">Игорь Демьяненко</h3>
                             <p class="we-proffesion">Product Designer</p>
@@ -246,7 +287,21 @@
                         </div>
                     </li>
                     <li class="we-list-item">
-                        <img src="images//index/repina.jpg" alt="Ольга Репина" width="450" class="we-img" />
+                        <picture>
+                            <source srcset="
+                                ./images/repina-desktop@1x.jpg 1x,
+                                ./images/repina-desktop@2x.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/repina-tablet.jpg 1x,
+                                ./iamges/repina-tablet@2x.png 2x
+                                " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/repina.jpg 1x,
+                                ./images/repina@2x.jpg 2x
+                                " media="(min-width: 320px)" />
+                        <img src="images/repina.jpg" alt="Ольга Репина" width="450" class="we-img" />
+                        </picture>
                         <div class="we-block">
                             <h3 class="we-name">Ольга Репина</h3>
                             <p class="we-proffesion">Frontend Developer</p>
@@ -280,7 +335,21 @@
                         </div>
                     </li>
                     <li class="we-list-item">
-                        <img src="images//index/tarasov.jpg" alt="Николай Тарасов" width="450" class="we-img" />
+                        <picture>
+                            <source srcset="
+                                ./images/tarasov-desktop@1x.png 1x,
+                                ./images/tarasov-desktop@2x.png 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/tarasov-tablet.jpg 1x,
+                                ./iamges/tarasov-tablet@2x.png 2x
+                                " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/tarasov.jpg 1x,
+                                ./images/tarasov@2x.png 2x
+                                " media="(min-width: 320px)" />
+                        <img src="./images/tarasov.jpg" alt="Николай Тарасов" width="450" class="we-img" />
+                        </picture>
                         <div class="we-block">
                             <h3 class="we-name">Николай Тарасов</h3>
                             <p class="we-proffesion">Marketing</p>
@@ -314,7 +383,21 @@
                         </div>
                     </li>
                     <li class="we-list-item">
-                        <img src="images//index/yarmakov.jpg" alt="Михаил Ермаков" width="450" class="we-img" />
+                        <picture>
+                            <source srcset="
+                                ./images/yarmakov-desktop@1x.jpg 1x,
+                                ./images/yarmakov-desktop@2x.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/yarmakov-tablet.jpg 1x,
+                                ./iamges/yarmakov-tablet@2x.png 2x
+                                " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/yarmakov.jpg 1x,
+                                ./images/yarmakov@2x.jpg 2x
+                                " media="(min-width: 320px)" />
+                        <img src="images/yarmakov.jpg" alt="Михаил Ермаков" width="450" class="we-img" />
+                        </picture>
                         <div class="we-block">
                             <h3 class="we-name">Михаил Ермаков</h3>
                             <p class="we-proffesion">UI Designer</p>
@@ -405,7 +488,8 @@
     
 <footer class="footer">
     <div class="container footer-blok">
-        <div class="address">
+        <div class="flex-adress">
+        <div class="street">
             <a href="./index.html" class="footer-logo"><span class="footer-logo-decor">Web</span>Studio</a>
             <address>
                 <ul class="footer-adress-list">
@@ -451,6 +535,7 @@
             </ul>
         </div>
     </div>
+</div>
     <div class="subscribe">
         <p class="subscribe-title">Подпишитесь на рассылку</p>
         <div class="subscribe-cont">

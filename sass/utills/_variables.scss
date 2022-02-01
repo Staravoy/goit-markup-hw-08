@@ -30,11 +30,15 @@ img {
 address {
   margin-top: 20px;
 }
+
 .container {
-  margin-left: 15px;
-  margin-right: 15px;
-  padding: 15px 0;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
+
 .none {
   position: absolute;
   width: 1px;
@@ -44,4 +48,12 @@ address {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+  display: none;
+}
+.hidden {
+  display: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }

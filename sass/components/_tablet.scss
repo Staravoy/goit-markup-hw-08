@@ -1,0 +1,73 @@
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 15px 15px;
+  }
+}
+@media (min-width: 768px) {
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .skills-item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 480px) {
+  .form-checkbox .checkbox-label {
+    font-size: 12px;
+  }
+  .form-checkbox .contract {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .we-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .we-list-item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .client-logo {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .flex-adress {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 768px) {
+  .exemples-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .exemples-list--exemples-item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .exemples-list--exemples-item img {
+    width: 450px;
+  }
+}
